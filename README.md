@@ -199,8 +199,7 @@ based on its textual sentiment characteristics.
 ## 1. Clone Repository
 
 ```bash
-git clone <repository-url>
-cd steam-game-review-analysis
+git clone https://github.com/Rahul-dev-P/steam-marvel-spiderman-sentiment-analysis.git
 ```
 
 ## 2. Install Dependencies
