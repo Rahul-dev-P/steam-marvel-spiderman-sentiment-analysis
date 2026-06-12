@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+__pycache__/
+*.xlsx
+*.xls
+chromedriver
+venv/
+steam_reviews_backup.csv
+Cleaned_Reviews
