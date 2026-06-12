@@ -182,10 +182,12 @@ based on its textual sentiment characteristics.
 # Project Structure
 
 ```text
-├── scrap.ipynb
-├── analysis.ipynb
-├── prediction.ipynb
+├── notebooks/
+│   ├── scrap.ipynb
+│   ├── analysis.ipynb
+│   └── prediction.ipynb
 ├── steam_reviews_final.csv
+├── Cleaned_Reviews.csv
 ├── Final_Reviews.csv
 └── README.md
 ```
