@@ -6,3 +6,6 @@ chromedriver
 venv/
 steam_reviews_backup.csv
 Cleaned_Reviews
+.DS_Store/
+*/.DS_Store
+venv/*
