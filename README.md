@@ -53,9 +53,8 @@ Reviews were collected directly from Steam using Selenium.
 
 ### Output
 
-```text
-steam_reviews_final.csv
-```
+- steam_reviews_final.csv
+
 
 ---
 
