@@ -156,25 +156,25 @@ based on its textual sentiment characteristics.
 
 # Key Insights
 
-### Player Sentiment
+### Feature Distribution
 
-- Most reviews were positive, indicating strong player satisfaction.
-- Positive reviews generally showed higher sentiment scores.
+Playtime (skew: 7.70) and review length (skew: 6.30) were both heavily right-skewed — most players write short reviews, but a small group of power-users pulls the tail way out. Feedback itself was left-skewed (-1.64), meaning the dataset leans strongly positive overall.
 
-### Review Behavior
+### Verbosity Vs Polarity
 
-- Review length and playtime exhibited significant right-skewed distributions.
-- Highly engaged players tended to write longer reviews.
+Review length had a weak negative correlation (-0.15) with positive feedback — frustrated players write longer, more detailed complaints. Interestingly, playtime and review length were basically uncorrelated (-0.02), so grinding more hours doesn't mean writing more.
 
-### Temporal Trends
+### The late-June spike
 
-- Review activity varied across weeks and months.
-- Review spikes may indicate game updates, promotions, or seasonal sales.
+Review volume surged in late June 2025 while average playtime and review length dropped — a pretty clear signature of a sale bringing in a wave of casual new players.
 
-### Predictive Findings
+### What people actually talk about
 
-- Sentiment score proved to be a strong indicator of recommendation behavior.
-- Machine learning models successfully classified user feedback using sentiment-based features.
+Positive reviews center on "story," "game," "great." Negative ones are almost entirely technical — "optimization," "glitch," "performance," "frame" — pointing to a rough PC port experience.
+
+### Where VADER breaks down
+
+A lot of negative reviews open with praise (story, traversal) before pivoting hard into complaints about crashes and performance. That mixed sentiment confuses a lexicon-based scorer like VADER, which is exactly why I fed those scores into ML classifiers instead of trusting VADER's raw output alone.
 
 ---
 
